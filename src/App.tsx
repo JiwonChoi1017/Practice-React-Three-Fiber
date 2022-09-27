@@ -1,9 +1,8 @@
-import Basic from "./components/Basic";
+import Animation from "./components/Animation";
 import React from "react";
-import TransformObject from "./components/TransformObject";
 
 function App() {
-  return <TransformObject />;
+  return <Animation />;
 }
 
 export default App;
