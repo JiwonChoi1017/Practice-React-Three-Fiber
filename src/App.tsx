@@ -1,8 +1,8 @@
-import Animation from "./components/Animation";
+import OrthographicCamera from "./components/OrthographicCamera";
 import React from "react";
 
 function App() {
-  return <Animation />;
+  return <OrthographicCamera />;
 }
 
 export default App;
