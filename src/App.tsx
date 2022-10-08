@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import Resizing from "./components/resizing/Resizing";
+import Geometry from "./components/geometry/Geometry";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Resizing sizes={sizes} />;
+  return <Geometry sizes={sizes} />;
 }
 
 export default App;
