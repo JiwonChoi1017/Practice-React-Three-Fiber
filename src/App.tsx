@@ -1,13 +1,19 @@
+import "./styles/style.css";
+
 import { Cursor, Sizes } from "./Common";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import PerspectiveCamera from "./components/camera/PerspectiveCamera";
+import Resizing from "./components/resizing/Resizing";
 
+/**
+ * App.
+ * @return App.
+ */
 function App() {
-  const sizes: Sizes = {
+  const [sizes, setSizes] = useState<Sizes>({
     width: window.innerWidth,
     height: window.innerHeight,
-  };
+  });
   const [cursor, setCursor] = useState<Cursor>({ x: 0, y: 0 });
   const changeCursorHandler = (event: React.PointerEvent<HTMLDivElement>) => {
     setCursor({
@@ -18,13 +24,18 @@ function App() {
     });
   };
 
-  return (
-    <PerspectiveCamera
-      sizes={sizes}
-      cursor={cursor}
-      onChangeCursor={changeCursorHandler}
-    />
-  );
+  useEffect(() => {
+    const resizeHandler = () => {
+      setSizes({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", resizeHandler);
+    return () => window.removeEventListener("resize", resizeHandler);
+  }, []);
+
+  return <Resizing sizes={sizes} />;
 }
 
 export default App;
