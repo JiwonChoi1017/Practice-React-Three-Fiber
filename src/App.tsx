@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import DebugUi from "./components/debugUi/DebugUi";
+import Texture from "./components/texture/Texture";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <DebugUi sizes={sizes} />;
+  return <Texture sizes={sizes} />;
 }
 
 export default App;
