@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import Texture from "./components/texture/Texture";
+import Lights from "./components/lights/Lights";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Texture sizes={sizes} />;
+  return <Lights sizes={sizes} />;
 }
 
 export default App;
