@@ -9,16 +9,9 @@ import DatGui, { DatNumber } from "react-dat-gui";
 import { OrbitControls, useHelper } from "@react-three/drei";
 import React, { useEffect, useRef, useState } from "react";
 
+import { Props } from "../../Common";
 import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper";
-import { Sizes } from "../../Common";
 import classes from "../../styles/Global.module.css";
-
-/**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
 
 /**
  * ライト.
@@ -101,8 +94,8 @@ const CommonMaterial = () => {
 };
 
 /**
- * トオブジェクト.
- * @return トオブジェクト.
+ * オブジェクト.
+ * @return オブジェクト.
  */
 const Objects = () => {
   const sphereRef = useRef<THREE.Mesh>(null);

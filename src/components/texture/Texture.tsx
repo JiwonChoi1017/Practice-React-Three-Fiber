@@ -6,16 +6,9 @@ import { OrbitControls, useTexture } from "@react-three/drei";
 import React, { useRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
-import { Sizes } from "../../Common";
+import { Props } from "../../Common";
 import classes from "../../styles/Global.module.css";
 import textureUrl from "../../assets/textures/minecraft.png";
-
-/**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
 
 /**
  * キューブ.

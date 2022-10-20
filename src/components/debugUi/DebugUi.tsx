@@ -7,16 +7,9 @@ import React, { useEffect, useMemo, useRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Sizes } from "../../Common";
+import { Props } from "../../Common";
 import classes from "../../styles/Global.module.css";
 import gsap from "gsap";
-
-/**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
 
 /**
  * キューブ.
