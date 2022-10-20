@@ -5,15 +5,8 @@ import * as THREE from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 
-import { Sizes } from "../../Common";
+import { Props } from "../../Common";
 import classes from "../../styles/Global.module.css";
-
-/**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
 
 /**
  * キューブ.

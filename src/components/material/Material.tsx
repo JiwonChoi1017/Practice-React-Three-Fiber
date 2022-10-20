@@ -9,7 +9,7 @@ import DatGui, { DatNumber } from "react-dat-gui";
 import { OrbitControls, useCubeTexture, useTexture } from "@react-three/drei";
 import React, { useEffect, useRef, useState } from "react";
 
-import { Sizes } from "../../Common";
+import { Props } from "../../Common";
 import classes from "../../styles/Global.module.css";
 import doorAlphaTextureUrl from "../../assets/textures/door/alpha.jpg";
 import doorAmbientOcclusionTextureUrl from "../../assets/textures/door/ambientOcclusion.jpg";
@@ -20,13 +20,6 @@ import doorNormalTextureUrl from "../../assets/textures/door/normal.jpg";
 import doorRoughnessTextureUrl from "../../assets/textures/door/roughness.jpg";
 import gradientTextureUrl from "../../assets/textures/gradients/3.jpg";
 import matcapTextureUrl from "../../assets/textures/matcaps/5.png";
-
-/**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
 
 /**
  * Light.
@@ -166,12 +159,12 @@ const CommonMaterial: React.FC<{
 };
 
 /**
- * トオブジェクト.
+ * オブジェクト.
  * @param {number} metalness 金属度
  * @param {number} roughness 荒さ
  * @param {number} aoMapIntensity アンビエントオクルージョンエフェクトの強度
  * @param {number} displacementScale 起伏の倍率
- * @return トオブジェクト.
+ * @return オブジェクト.
  */
 const Objects: React.FC<{
   params: {

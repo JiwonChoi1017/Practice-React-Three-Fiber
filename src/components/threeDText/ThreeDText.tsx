@@ -6,21 +6,14 @@ import { OrbitControls, Text3D, useTexture } from "@react-three/drei";
 import React, { Suspense, useEffect, useRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
-import { Sizes } from "../../Common";
+import { Props } from "../../Common";
 import classes from "../../styles/Global.module.css";
 import matcapTextureUrl from "../../assets/textures/matcaps/3.png";
 import { useMemo } from "react";
 
 /**
- * Props.
- */
-interface Props {
-  sizes: Sizes;
-}
-
-/**
- * トオブジェクト.
- * @return トオブジェクト.
+ * オブジェクト.
+ * @return オブジェクト.
  */
 const Objects = () => {
   return (
