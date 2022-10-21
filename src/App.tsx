@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import BakedShadow from "./components/shadows/BakedShadow";
+import HauntedHouse from "./components/hauntedHouse/HauntedHouse";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <BakedShadow sizes={sizes} />;
+  return <HauntedHouse sizes={sizes} />;
 }
 
 export default App;
