@@ -16,6 +16,9 @@ import simpleShadowTextureUrl from "../../assets/textures/shadow/simpleShadow.jp
 /**
  * ライト.
  * @param {number} intensity 強度
+ * @param {number} x x軸
+ * @param {number} y y軸
+ * @param {number} z z軸
  * @return ライト.
  */
 const Lights: React.FC<{
