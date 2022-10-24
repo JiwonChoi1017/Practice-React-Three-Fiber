@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import HauntedHouse from "./components/hauntedHouse/HauntedHouse";
+import Particles from "./components/particles/Particles";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <HauntedHouse sizes={sizes} />;
+  return <Particles sizes={sizes} />;
 }
 
 export default App;
