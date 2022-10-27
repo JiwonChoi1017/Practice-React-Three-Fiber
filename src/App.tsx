@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import Particles from "./components/particles/Particles";
+import Galaxy from "./components/galaxy/Galaxy";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Particles sizes={sizes} />;
+  return <Galaxy sizes={sizes} />;
 }
 
 export default App;
