@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import Galaxy from "./components/galaxy/Galaxy";
+import Raycaster from "./components/raycaster/Raycaster";
 
 /**
  * App.
@@ -35,7 +35,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Galaxy sizes={sizes} />;
+  return <Raycaster sizes={sizes} />;
 }
 
 export default App;
