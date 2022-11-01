@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import Raycaster from "./components/raycaster/Raycaster";
+import ImportModel from "./components/importModel/ImportModel";
 
 /**
  * App.
@@ -15,12 +15,17 @@ function App() {
     height: window.innerHeight,
   });
   const [cursor, setCursor] = useState<Cursor>({ x: 0, y: 0 });
-  const changeCursorHandler = (event: React.PointerEvent<HTMLDivElement>) => {
+  // const changeCursorHandler = (event: React.PointerEvent<HTMLDivElement>) => {
+  //   setCursor({
+  //     x: event.clientX / sizes.width - 0.5,
+  //     y: -(event.clientY / sizes.height - 0.5),
+  //   });
+  // };
+
+  const changeCursorHandler = (event: MouseEvent) => {
     setCursor({
-      // x: event.clientX / sizes.width - 0.5,
-      // y: event.clientY / sizes.height - 0.5,
       x: event.clientX / sizes.width - 0.5,
-      y: -(event.clientY / sizes.height - 0.5),
+      y: event.clientY / sizes.height - 0.5,
     });
   };
 
@@ -35,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Raycaster sizes={sizes} />;
+  return <ImportModel sizes={sizes} />;
 }
 
 export default App;
