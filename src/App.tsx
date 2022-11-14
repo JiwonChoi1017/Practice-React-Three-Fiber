@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import RealisticRender from "./components/realisticRender/RealisticRender";
+import Fox from "./components/fox/Fox";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <RealisticRender sizes={sizes} />;
+  return <Fox sizes={sizes} />;
 }
 
 export default App;
