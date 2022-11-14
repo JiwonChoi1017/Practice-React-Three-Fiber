@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./Common";
 import React, { useEffect, useState } from "react";
 
-import ImportModel from "./components/importModel/ImportModel";
+import RealisticRender from "./components/realisticRender/RealisticRender";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <ImportModel sizes={sizes} />;
+  return <RealisticRender sizes={sizes} />;
 }
 
 export default App;
