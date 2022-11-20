@@ -1,9 +1,9 @@
 import "./styles/style.css";
 
-import { Cursor, Sizes } from "./Common";
+import { Cursor, Sizes } from "./types/Common";
 import React, { useEffect, useState } from "react";
 
-import Fox from "./components/fox/Fox";
+import Drei from "./components/drei/Drei";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Fox sizes={sizes} />;
+  return <Drei />;
 }
 
 export default App;
