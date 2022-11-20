@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { PCFSoftShadowMap } from "three";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 import floorColorTextureUrl from "../../assets/textures/dirt/color.jpg";
 import floorNormalTextureUrl from "../../assets/textures/dirt/normal.jpg";

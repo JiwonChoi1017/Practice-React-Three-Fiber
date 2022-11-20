@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 
 /**

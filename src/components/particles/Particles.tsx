@@ -6,7 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useTexture } from "@react-three/drei";
 import React, { useEffect, useRef } from "react";
 
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 import textureUrl from "../../assets/textures/particles/2.png";
 

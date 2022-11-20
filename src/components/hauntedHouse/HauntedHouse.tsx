@@ -9,7 +9,7 @@ import DatGui, { DatNumber } from "react-dat-gui";
 import { OrbitControls, useTexture } from "@react-three/drei";
 import React, { useEffect, useRef, useState } from "react";
 
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import bricksAmbientOcclusionTextureUrl from "../../assets/textures/bricks/ambientOcclusion.jpg";
 import bricksColorTextureUrl from "../../assets/textures/bricks/color.jpg";
 import bricksNormalTextureUrl from "../../assets/textures/bricks/normal.jpg";

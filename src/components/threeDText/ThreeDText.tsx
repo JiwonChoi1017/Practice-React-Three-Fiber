@@ -6,7 +6,7 @@ import { OrbitControls, Text3D, useTexture } from "@react-three/drei";
 import React, { Suspense, useEffect, useRef } from "react";
 
 import { Canvas } from "@react-three/fiber";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 import matcapTextureUrl from "../../assets/textures/matcaps/3.png";
 import { useMemo } from "react";

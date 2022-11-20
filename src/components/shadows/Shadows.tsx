@@ -9,7 +9,7 @@ import DatGui, { DatNumber } from "react-dat-gui";
 import React, { useEffect, useRef, useState } from "react";
 
 import { OrbitControls } from "@react-three/drei";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 
 /**
