@@ -10,7 +10,7 @@ import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 import { PCFSoftShadowMap } from "three";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import React from "react";
 import classes from "../../styles/Global.module.css";
 

@@ -11,7 +11,7 @@ import { OrbitControls, useCubeTexture, useGLTF } from "@react-three/drei";
 import React, { useEffect, useRef, useState } from "react";
 
 import { PCFSoftShadowMap } from "three";
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 
 /**

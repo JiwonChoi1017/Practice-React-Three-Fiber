@@ -3,7 +3,7 @@
 import * as THREE from "three";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Cursor, Sizes } from "../../Common";
+import { Cursor, Sizes } from "../../types/Common";
 import React, { useRef } from "react";
 
 /**

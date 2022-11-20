@@ -9,7 +9,7 @@ import DatGui, { DatNumber } from "react-dat-gui";
 import { OrbitControls, useCubeTexture, useTexture } from "@react-three/drei";
 import React, { useEffect, useRef, useState } from "react";
 
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import classes from "../../styles/Global.module.css";
 import doorAlphaTextureUrl from "../../assets/textures/door/alpha.jpg";
 import doorAmbientOcclusionTextureUrl from "../../assets/textures/door/ambientOcclusion.jpg";

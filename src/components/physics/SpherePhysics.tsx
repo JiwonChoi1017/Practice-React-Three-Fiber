@@ -7,7 +7,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useCubeTexture } from "@react-three/drei";
 import { Physics, usePlane, useSphere } from "@react-three/cannon";
 
-import { Props } from "../../Common";
+import { Props } from "../../types/Common";
 import React from "react";
 import classes from "../../styles/Global.module.css";
 

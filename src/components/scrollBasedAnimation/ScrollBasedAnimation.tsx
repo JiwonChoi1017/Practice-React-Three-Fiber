@@ -5,7 +5,7 @@ import "/node_modules/react-dat-gui/dist/index.css";
 import * as THREE from "three";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Cursor, Props, Sizes } from "../../Common";
+import { Cursor, Props, Sizes } from "../../types/Common";
 import DatGui, { DatColor } from "react-dat-gui";
 import React, { useEffect, useRef, useState } from "react";
 
