@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./types/Common";
 import React, { useEffect, useState } from "react";
 
-import Drei from "./components/drei/Drei";
+import ShaderPatterns from "./components/shaders/ShaderPatterns";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <Drei />;
+  return <ShaderPatterns />;
 }
 
 export default App;
