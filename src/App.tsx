@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./types/Common";
 import React, { useEffect, useState } from "react";
 
-import ShaderPatterns from "./components/shaders/ShaderPatterns";
+import AnimatedGalaxy from "./components/galaxy/AnimatedGalaxy";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
-  return <ShaderPatterns />;
+  return <AnimatedGalaxy />;
 }
 
 export default App;
