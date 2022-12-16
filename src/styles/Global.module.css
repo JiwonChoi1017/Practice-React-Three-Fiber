@@ -37,3 +37,11 @@ section:nth-child(odd) {
   border-radius: 30px;
   user-select: none;
 }
+
+.htmlScreen {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  background: #000000;
+}
