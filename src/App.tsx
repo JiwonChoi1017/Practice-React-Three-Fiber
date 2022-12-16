@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./types/Common";
 import React, { useEffect, useState } from "react";
 
-import EnvironmentAndStaging from "./components/environmentAndStaging/EnvironmentAndStaging";
+import Portfolio from "./components/portfolio/Portfolio";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
   //   return () => window.removeEventListener("resize", resizeHandler);
   // }, []);
 
-  return <EnvironmentAndStaging />;
+  return <Portfolio />;
 }
 
 export default App;
