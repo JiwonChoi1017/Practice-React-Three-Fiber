@@ -3,7 +3,7 @@ import "./styles/style.css";
 import { Cursor, Sizes } from "./types/Common";
 import React, { useEffect, useState } from "react";
 
-import Portfolio from "./components/portfolio/Portfolio";
+import Game from "./components/game/Game";
 
 /**
  * App.
@@ -40,7 +40,7 @@ function App() {
   //   return () => window.removeEventListener("resize", resizeHandler);
   // }, []);
 
-  return <Portfolio />;
+  return <Game />;
 }
 
 export default App;
